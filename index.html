@@ -13,21 +13,21 @@
 </head>
 
 <body>
-  <h1 class="text-center">Calcola il prezzo del biglietto</h1>
-  <div class="container  text">
-    <form action="#">
-      <div class="box">
-        <label for="name-field">Nome e Cognome</label>
+  <h1 class="text-center title">Calcola il prezzo del biglietto</h1>
+  <div class="container">
+    <form action="#" class="d-flex row">
+      <div class="box col-4">
+        <label for="name-field" class="main-text">Nome e Cognome</label>
         <input class="form-control" placeholder='Nome e Cognome' type="text" id="name-field" required>
       </div>
 
-      <div class="box">
-        <label for="age-field">Scrivi età</label>
+      <div class="box col">
+        <label for="age-field" class="main-text">Scrivi età</label>
         <input class="form-control" type="text" id="age-field" placeholder="età" required>
       </div>
 
-      <div class="box">
-        <label for="distance-field">Km da percorrere</label>
+      <div class="box col">
+        <label for="distance-field" class="main-text">Km da percorrere</label>
         <input class="form-control" placeholder='Numero Km' type="text" id="distance-field" required>
       </div>
 
@@ -39,16 +39,28 @@
   </form>
   </div>
 
-  <div id="ticket d-none">
-    <h1 class="text-center">Il tuo biglietto</h1>
+  <div id="ticket" class="">
+    <h1 class="text-center title">Il tuo biglietto</h1>
     <div class="container text">
-      <h3>Dettagli passeggero</h3>
+      <h3 class="text-start">Dettagli passeggero</h3>
       <div class="ticket-info">
-        <ul class="">
-          <li><span>Nome passeggero</span> <span id="ticketName"></span></li>
-          <li><span>Età</span> <span id="ticketAge"></span></li>
-          <li><span>Distanza</span> <span id="ticketDistance"></span></li>
-          <li><span>Tariffa</span> <span id="ticketPrice"></span> €</li>
+        <ul class="row">
+          <li class="col-5">
+            <div class="main-text passenger-background">Nome passeggero</div>
+            <div id="ticketName" class="passenger-background"></div>
+          </li>
+          <li class="col-2">
+            <div class="main-text">Età</div>
+            <div id="ticketAge"></div>
+          </li>
+          <li class="col-2">
+            <div class="main-text">Distanza</div>
+            <div id="ticketDistance"></div>
+          </li>
+          <li class="col-2">
+            <div class="main-text">Tariffa</div>
+            <div id="ticketPrice"></div>
+          </li>
 
           <!-- <li>Carrozza</li>
           <li>Codice CP</li> -->

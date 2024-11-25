@@ -1,13 +1,14 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: brown;
+  background-color: #224174;
 }
 
+/* Utility */
 .d-flex {
   display: flex;
 }
@@ -16,13 +17,37 @@ body {
   text-align: center;
 }
 
-.text {
+.main-text {
   font-size: 1.5rem;
+}
+
+.text-start {
+  text-align: start;
+  margin: 20px 20px;
+  font-size: 1.3rem;
+}
+
+.title {
+  color: #BED7F2;
+  font-weight: 800;
+  margin-top: 20px;
 }
 
 .d-none {
   display: none;
 }
+
+.d-block {
+  display: block;
+}
+
+.passenger-background {
+  background-color: #82A5CB;
+}
+
+
+
+/* fine utility */
 
 .container {
   max-width: 80%;
@@ -30,7 +55,7 @@ body {
   margin: 30px auto;
   margin-bottom: 70px;
   flex-wrap: wrap;
-  background-color: blanchedalmond;
+  background-color: white;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -39,28 +64,23 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.button-box {
-  width: 100%;
-  background-color: blue;
-}
 
 .box {
-  width: calc(80% / 3);
-  background-color: aquamarine;
+  text-align: center;
+  margin: 80px 20px 0 20px;
 }
 
-.box-ticket {
-  width: 80%;
-  margin: 0 auto;
-  background-color: yellowgreen;
+.button-box {
+  margin-top: 50px;
 }
 
-.box-ticket ul {
-  margin: 0 auto;
+#ticket ul {
   list-style: none;
+  margin: 20px 0 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
-.box-ticket ul li {
-  background-color: blue;
-  width: 80%;
-} */
+#ticket ul li {
+  line-height: 90px;
+}

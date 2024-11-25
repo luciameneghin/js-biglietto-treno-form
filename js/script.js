@@ -39,8 +39,6 @@ function ticketPriceCalc(event) {
   ticketAge.textContent = ageField.value.trim();
   ticketDistance.textContent = distanceField.value.trim();
   ticketPrice.textContent = ticketPriceValue.toFixed(2);
-
-  ticketSection.style.display = 'block';
 }
 
 
