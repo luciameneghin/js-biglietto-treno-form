@@ -23,7 +23,7 @@ MILESTONE 2:
 Solo una volta che il milestone 1 sarà completo e funzionante allora realizzeremo un form in pagina in cui l’utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo.
 Il recap dei dati e l’output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-Cosa fare:
+<!-- Cosa fare:
 - creare una grafica spoglia del biglietto in cui andrò ad inserire i dati di tipologia di biglietto(minore, standard, over 65), km da percorrere, codice treno, ora di partenza e prezzo totale
 - al click del bottone i dati vengono inseriti nel biglietto fittizio al di sotto, il biglietto sarà d-none e una volta schiacciato il bottone d-block. 
-- nel momento in cui premo il bottone i dati inseriti sopra negli input si cancellano
+- nel momento in cui premo il bottone i dati inseriti sopra negli input si cancellano -->
