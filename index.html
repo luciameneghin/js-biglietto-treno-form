@@ -4,42 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
+    integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
+    crossorigin='anonymous' />
+
   <link rel="stylesheet" href="css/style.css">
   <title>Biglietto del treno</title>
 </head>
 
 <body>
-  <h1>Calcola il prezzo del biglietto</h1>
-  <form class="container d-flex">
+  <h1 class="text-center">Calcola il prezzo del biglietto</h1>
+  <div class="container  text">
+    <form action="#">
+      <div class="box">
+        <label for="name-field">Nome e Cognome</label>
+        <input class="form-control" placeholder='Nome e Cognome' type="text" id="name-field" required>
+      </div>
 
-    <!-- <div class="box">
-      <label for="name">Nome e Cognome</label>
-      <input placeholder='Nome e Cognome' type="text" id="name" required>
-    </div> -->
+      <div class="box">
+        <label for="age-field">Scrivi età</label>
+        <input class="form-control" type="text" id="age-field" placeholder="età" required>
+      </div>
 
-    <div class="box">
-      <label for="age">Scrivi età</label>
-      <input type="text" id="age" placeholder="età">
-    </div>
+      <div class="box">
+        <label for="distance-field">Km da percorrere</label>
+        <input class="form-control" placeholder='Numero Km' type="text" id="distance-field" required>
+      </div>
 
-    <div class="box">
-      <label for="distance">Km da percorrere</label>
-      <input placeholder='Numero Km' type="text" id="distance" required>
-    </div>
-
-    <div class="">
-      <button id="generate">Genera</button>
-      <button id="cancel">Annulla</button>
-    </div>
-
-    <div id="result"></div>
+      <div class="button-box">
+        <button id='generate' class="btn btn-light">Genera</button>
+        <button id='cancel' class="btn btn-light">Annulla</button>
+      </div>
+  </div>
   </form>
+  </div>
+
+  <div id="ticket d-none">
+    <h1 class="text-center">Il tuo biglietto</h1>
+    <div class="container text">
+      <h3>Dettagli passeggero</h3>
+      <div class="ticket-info">
+        <ul class="">
+          <li><span>Nome passeggero</span> <span id="ticketName"></span></li>
+          <li><span>Età</span> <span id="ticketAge"></span></li>
+          <li><span>Distanza</span> <span id="ticketDistance"></span></li>
+          <li><span>Tariffa</span> <span id="ticketPrice"></span> €</li>
+
+          <!-- <li>Carrozza</li>
+          <li>Codice CP</li> -->
+
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 

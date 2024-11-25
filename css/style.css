@@ -4,25 +4,63 @@
   box-sizing: border-box;
 }
 
-
+body {
+  background-color: brown;
+}
 
 .d-flex {
   display: flex;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.d-none {
+  display: none;
+}
+
 .container {
   max-width: 80%;
   height: 300px;
-  margin: 80px auto;
+  margin: 30px auto;
+  margin-bottom: 70px;
   flex-wrap: wrap;
   background-color: blanchedalmond;
   justify-content: center;
   text-align: center;
   align-items: center;
+  border: 1px solid grey;
+  border-radius: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button-box {
+  width: 100%;
+  background-color: blue;
 }
 
 .box {
   width: calc(80% / 3);
   background-color: aquamarine;
+}
+
+.box-ticket {
+  width: 80%;
+  margin: 0 auto;
+  background-color: yellowgreen;
+}
+
+.box-ticket ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+.box-ticket ul li {
+  background-color: blue;
+  width: 80%;
 } */
