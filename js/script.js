@@ -6,13 +6,14 @@ const distanceField = document.getElementById('distance-field');
 
 // seleziono bottoni
 const generateBtn = document.getElementById('generate');
-const cancelBtn = document.getElementById('cancel')
+const cancelBtn = document.getElementById('cancel');
 
 // seleziono elementi target
-const ticketSection = document.getElementById('ticket')
-const name = document.getElementById('ticketName')
-const age = document.getElementById('ticketAge')
-const distance = document.getElementById('ticketDistance')
+const ticketSection = document.getElementById('ticket');
+document.getElementById('ticket').style.display = 'none';
+const name = document.getElementById('ticketName');
+const age = document.getElementById('ticketAge');
+const distance = document.getElementById('ticketDistance');
 const price = document.getElementById('ticketPrice');
 
 
@@ -39,6 +40,8 @@ function ticketPriceCalc(event) {
   ticketAge.textContent = ageField.value.trim();
   ticketDistance.textContent = distanceField.value.trim();
   ticketPrice.textContent = ticketPriceValue.toFixed(2);
+
+  document.getElementById('ticket').style.display = 'block';
 }
 
 
@@ -51,6 +54,7 @@ cancelBtn.addEventListener('click', () => {
   nameField.value = '';
   ageField.value = '';
   distanceField.value = '';
+  document.getElementById('ticket').style.display = 'none';
 })
 
 
